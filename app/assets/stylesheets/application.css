@@ -82,12 +82,14 @@ input[type="radio"] + label {
   cursor: pointer;
 }
 
-input[type="radio"]:checked + label {
-  color: green;
+input[type="radio"]:checked + label .label-flex {
+  color: white;
+  background: #0086ff;
 }
 
 .label-flex {
   display: flex;
+  padding: 10px 25px;
 }
 
 .question {
@@ -99,7 +101,11 @@ input[type="radio"]:checked + label {
   text-align: left;
   background: white;
   margin-bottom: 10px;
-  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.question-label:focus {
+  background: yellow;
 }
 
 .question-label:hover {
