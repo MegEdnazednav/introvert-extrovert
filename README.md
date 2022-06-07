@@ -8,6 +8,7 @@ A few notes:
 
 ### SETUP
 
+- This app uses ruby version `3.0.3` and rails version `7.0.3`
 - clone the repo
 - run `bundle install`
 - run `rails db:create db:migrate db:seed`
@@ -24,7 +25,7 @@ A few notes:
 
 ### NEXT STEPS (not for now, I'm afraid)
 
-- Add user role 'Admin'
+- Add user role `Admin`
 - Admin can add more questions
 - Add model `Quiz` and have multiple quizes. Questions and answers belong to a specific quiz.
 
