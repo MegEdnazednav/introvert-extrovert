@@ -1,5 +1,5 @@
 <%= content_tag :div, class: "result" do %>
-  Based on our extensive scientific research, you are an
+  <%= @current_user.name %>, based on our extensive scientific research, you are an
   <br>
   <strong><%= determine_personality_type(@total) %></strong>
 <% end %>
