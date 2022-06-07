@@ -1,0 +1,15 @@
+<%= content_tag :div, class: "title" do %>
+  Are you <span class="thin">introvert</span> <br>
+  or <strong>extrovert</strong>?
+<% end %>
+<%= form_for @user, url: users_path, remote: true do |f| %>
+  <div><%= f.label :name, "What's your name?" %></div>
+  <%= f.text_field :name %>
+  <%= @user.errors.full_messages.first if @user.errors.any? %>
+
+  <div class="form-group mb-0 text-right">
+    <%= f.submit "Let's find out", class: 'btn btn-primary' %>
+  </div>
+<% end %>
+
+
