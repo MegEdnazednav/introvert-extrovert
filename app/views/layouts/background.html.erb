@@ -1,0 +1,8 @@
+<%= content_tag :div, class: "page" do %>
+  <%= content_tag :div, class: "content" do %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= yield %>
+  <% end %>
+  <%= image_tag("introvert.png", class: "introvert") %>
+  <%= image_tag("extrovert.png", class: "extrovert") %>
+<% end %>
