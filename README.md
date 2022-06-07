@@ -28,11 +28,13 @@ A few notes:
 - Admin can add more questions
 - Add model `Quiz` and have multiple quizes. Questions and answers belong to a specific quiz.
 
+### SCREENSHOTS
+
 LOGIN
-![]()
+![](https://raw.githubusercontent.com/MegEdnazednav/introvert-extrovert/main/app/assets/images/login.png)
 
 QUESTION
-![]()
+![](https://raw.githubusercontent.com/MegEdnazednav/introvert-extrovert/main/app/assets/images/question.png)
 
 RESULT
-![]()
+![](https://raw.githubusercontent.com/MegEdnazednav/introvert-extrovert/main/app/assets/images/result.png)
