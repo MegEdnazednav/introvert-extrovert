@@ -1,0 +1,25 @@
+<%= content_tag :div do %>
+  <%= content_tag :div, class: 'question' do %>
+    <%= @question.text %>
+  <% end %>
+
+  <%= form_for @user_answer, url: user_answers_path do |f| %>
+    <% @answers.each_with_index do |answer, i| %>
+      <%= content_tag :div, class: "question-label" do %>
+        <%= f.radio_button :answer_id, answer.id %>
+        <%= f.label :answer_id, value: answer.id do %>
+          <%= content_tag :div, class: "label-flex" do %>
+            <div><%= i + 1 %>&nbsp;</div>
+            <div><%= answer.text %></div>
+          <% end %>
+        <% end %>
+      <% end %>
+      <%= f.hidden_field :question_id, value: params[:id] %>
+    <% end %>
+    <%= f.submit @question.next_question ? 'Next question' : 'See results' , class: 'btn btn-primary' %>
+    <%= content_tag :div, class: "restart-link" do %>
+      <%= link_to  "Restart quiz", root_path %>
+    <% end %>
+  <% end %>
+<% end %>
+
